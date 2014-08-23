@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gate Patterns Example</title>
+</head>
+<body>
+    <script src="./static/js/modulePattern.js"></script>
+    <script>
+        console.log('=== MODULE PATTERN IMPLEMENTATION ===');
+        userCart.addItem({name: 'Teddy Bear', price: 20.9})
+                .addItem({name: 'Grumpy Cat', price: 100.11})
+                .addItem({name: 'Hello, Kitty', price: 10.4});
+        console.log(userCart);
+        console.log(userCart.cartItems);
+        console.log(userCart.getTotalPrice());
+        console.log(userCart.getItemsCount());
+    </script>
+</body>
+</html>
