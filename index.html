@@ -6,6 +6,7 @@
 </head>
 <body>
     <script src="./static/js/modulePattern.js"></script>
+    <script src="./static/js/facadePattern.js"></script>
     <script>
         console.log('=== MODULE PATTERN IMPLEMENTATION ===');
         userCart.addItem({name: 'Teddy Bear', price: 20.9})
@@ -15,6 +16,10 @@
         console.log(userCart.cartItems);
         console.log(userCart.getTotalPrice());
         console.log(userCart.getItemsCount());
+
+        console.log('');
+        console.log('=== FACADE PATTERN IMPLEMENTATION ===');
+        counter.facade({val: 10, countToZero: true});
     </script>
 </body>
 </html>

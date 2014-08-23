@@ -1,19 +1,21 @@
 /*
-* This is example of Module patter on native js: realization of user cart
-* */
+ * This is example of Module patter on native js: realization of user cart
+ * */
 
-var userCart = (function(){
+'use strict';
+
+var userCart = (function () {
     var cartItems = [];
 
     return {
-        addItem: function(item) {
+        addItem: function (item) {
             cartItems.push(item);
             return this;
         },
-        getItemsCount: function() {
+        getItemsCount: function () {
             return cartItems.length;
         },
-        getTotalPrice: function() {
+        getTotalPrice: function () {
             var count = this.getItemsCount(),
                 price = 0;
 
